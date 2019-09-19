@@ -1,6 +1,13 @@
 # bubble  sort
-unSortArray = [23, 43, 1, 34, 343, 55]
-for i in range(len(unSortArray)):
-    
-
-print(unSortArray)
+def bubbleSort(unSortArray):
+    for i in range(len(unSortArray)):
+        swap = False
+        for j in range(0, len(unSortArray) - i - 1):
+            if unSortArray[j] > unSortArray[j + 1]:
+                swap = unSortArray[j]
+                unSortArray[j] = unSortArray[j + 1]
+                unSortArray[j + 1] = swap
+                swap = True
+        if swap == False:
+            break
+    return unSortArray
