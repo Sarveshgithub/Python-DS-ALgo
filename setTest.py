@@ -1,2 +1,2 @@
-s = set([x for x in range(0, 5)])
-print(s)
+s = "Hello Sarvesh welcome to python"
+print(s[-8:-1])
