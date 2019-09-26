@@ -14,3 +14,5 @@ alpha = string.ascii_lowercase
 print(alpha[2:3])
 s = "cbwqqwq"
 print(s[:-1])
+sdfsdfsd
+
