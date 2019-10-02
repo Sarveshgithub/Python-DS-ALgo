@@ -5,3 +5,5 @@ from itertools import product
 l = list(product([3, 4], [1, 2]))
 j = " ".join(map(str, l))
 print(j)
+
+print(float(33.44))
