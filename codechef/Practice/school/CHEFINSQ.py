@@ -1,4 +1,5 @@
 # https://www.codechef.com/problems/CHEFINSQ
+
 l = list(map(int, input().split()))
 subset = {}
 for i in range(len(l)):
@@ -9,7 +10,8 @@ for i in range(len(l)):
         else:
             subset[s] = [(l[i], l[j + 1])]
 
-print(subset)
+key_min = min(subset.keys(), key=(lambda k: subset[k]))
+print(len(subset[key_min]))
 # 1 2 3 4
 # 0
 # 1,1
