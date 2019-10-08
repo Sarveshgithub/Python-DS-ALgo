@@ -12,6 +12,7 @@
 
 # key_min = min(subset.keys(), key=(lambda k: subset[k]))
 # print(len(subset[key_min]))
+# https://www.geeksforgeeks.org/print-subsets-given-size-set/
 # 1 2 3 4
 # 0
 # 1,1

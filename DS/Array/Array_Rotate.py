@@ -28,7 +28,4 @@ for _ in range(n):
         count += 1
         if len(tempArr) == 1:
             break
-    output.append(str(tempArr[0]))
-
-print("\n".join(output))
-
+    print(str(tempArr[0]))
