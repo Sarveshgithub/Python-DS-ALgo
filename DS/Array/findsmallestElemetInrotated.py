@@ -1,13 +1,12 @@
 def bs(a, tempArray, L, R):
     mid = (L + R) // 2
-    print(mid, L, R)
     if tempArray[mid + 1] == "T":
         L = mid + 1
     elif tempArray[mid - 1] == "F":
         R = mid - 1
     elif tempArray[mid] == "F":
         return a[mid]
-    bs(a, tempArray, L, R)
+    return bs(a, tempArray, L, R)
 
 
 a = [3, 4, 5, 6, 7, 1, 2]
