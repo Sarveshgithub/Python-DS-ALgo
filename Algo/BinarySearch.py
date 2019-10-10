@@ -1,7 +1,7 @@
 def binarySearch(a, target):
     L, R = 0, len(a) - 1
-    while a[L] <= a[R]:
-        mid = (L + R) // 2
+    while L <= R:
+        mid = L + (R - L) // 2
         if a[mid] == target:
             return mid
         elif a[mid] < target:
@@ -11,10 +11,10 @@ def binarySearch(a, target):
     return -1
 
 
-a = [9, 8, 4, 5, 1, 2]
+a = [1, 2, 3]
 
 a.sort()
 print(a)
-val = 1
+val = 30
 print(binarySearch(a, val))
 
