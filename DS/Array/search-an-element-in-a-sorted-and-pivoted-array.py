@@ -40,5 +40,4 @@ elif target < a[pivot] or target > a[len(a) - 1]:
     print(bs(a, l, pivot - 1, target))
 else:
     print(bs(a, pivot, r, target))
-# print(a[pivot:])
 
