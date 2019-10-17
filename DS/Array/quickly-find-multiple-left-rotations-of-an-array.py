@@ -16,3 +16,27 @@
 # Input : arr[] = {1, 3, 5, 7, 9}
 #         k1 = 14
 # Output : 9 1 3 5 7
+
+
+# left rotation of array
+
+
+def leftRotion(arr):
+    last = len(arr) - 1
+    first = arr[0]
+    for i in range(len(arr) - 1):
+        arr[i] = arr[i + 1]
+    arr[last] = first
+    return arr
+
+
+def nTimes(n, arr):
+    if n == 0:
+        return arr
+    else:
+        arr = leftRotion(arr)
+    return nTimes(n - 1, arr)
+
+
+arr = [1, 3, 5, 7, 9]
+print(nTimes(14, arr))
