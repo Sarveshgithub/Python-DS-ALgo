@@ -22,26 +22,26 @@
 # 2,3
 # 3,4
 
-conjunto = [1, 2, 3, 4]
-k = 2
-lista = []
-iteraciones = [0]
+
+def subs(l, k):
+    a.sort()
+    minpair = a[:k]
+    count = 0
+    for i in range(len(a) - k):
+        for j in range(i + 1, len(a)):
+            pair = [a[i]] + a[j : j + (k - 1)]
+            if a[i:k] == pair:
+                count += 1
+            elif sum(pair) > sum(minpair):
+                break
+    print(count)
 
 
-def subconjuntos(l, k):
-    if k == len(l):
-        if not l in lista:
-            lista.append(l)
-        return
-    for i in l:
-        aux = l[:]
-        aux.remove(i)
-        result = subconjuntos(aux, k)
-        iteraciones[0] += 1
-        if not result in lista and result:
-            lista.append(result)
-
-
-subconjuntos(conjunto, k)
-print(lista)
+n = int(input())
+while n != 0:
+    i1 = list(map(int, input().split(" ")))
+    s, k = i1[0], i1[1]
+    a = list(map(int, input().split(" ")))
+    subs(a, k)
+    n -= 1
 
