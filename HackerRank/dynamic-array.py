@@ -7,12 +7,11 @@ def sequence(seqList, quary, n):
         if q == 1:
             seq = (x ^ lastAnswer) % n
             seqList[seq].append(y)
-            print(seqList)
         elif q == 2:
             seq = (x ^ lastAnswer) % n
-            print(seq)
-            lastAnswer = y % len(seqList[seq])
-            print(seqList[seq][lastAnswer], seqList)
+            getSeq = seqList[seq]
+            lastAnswer = getSeq[y % len(getSeq)]
+            print(lastAnswer)
 
 
 i1 = list(map(int, input().split(" ")))
