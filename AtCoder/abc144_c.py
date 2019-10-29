@@ -1,8 +1,10 @@
 import math 
 n = int(input())
 s = math.sqrt(n)
-nextN = math.floor(s)
-if nextN*nextN == n:
-    print((nextN*2)-2)
-else:
-    print((nextN*2)-1) 
+ps = math.floor(s)
+for i in range(1,ps+1):
+    for j in range(ps,ps*2+1):
+        if i*j == n:
+            print(i+(j-2))
+            break
+
