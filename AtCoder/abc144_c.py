@@ -1,10 +1,9 @@
 import math 
 n = int(input())
-s = math.sqrt(n)
-ps = math.floor(s)
-for i in range(1,ps+1):
-    for j in range(ps,ps*2+1):
-        if i*j == n:
-            print(i+(j-2))
-            break
+a,b=0,0
+print(n**1)
+for i in range(1,int(1+n**.5)):
+    if (n%i==0):
+        a,b=i,n//i
+print(a+(b-2))
 
