@@ -71,6 +71,6 @@ def print_board(bo):
 
 
 print_board(board)
-print("==" * 19)
+print("=" * 23)
 solve(board)
 print_board(board)
