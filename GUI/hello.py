@@ -16,9 +16,9 @@ board = [
 for i in range(0, 9):
     for j in range(0, 9):
         if board[i][j] == 0:
-            Entry(root, width=5).grid(row=i, column=j)
+            Entry(root, width=5, borderwidth=0).grid(row=i, column=j)
         else:
-            Button(root, text=str(board[i][j]), width=5).grid(row=i, column=j)
-        print(board[i][j])
+            Button(root, text=str(board[i][j]), width=5, borderwidth=0).grid(row=i, column=j)
+        # print(board[i][j])
         # Button(root, text=str(i * j)).grid(row=i, column=j)
 root.mainloop()
