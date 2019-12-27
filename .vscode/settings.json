@@ -3,7 +3,7 @@
     "python.linting.enabled": true,
     "python.pythonPath": "C:\\Users\\sarvesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
     "python.formatting.provider": "black",
-    "workbench.colorTheme": "Predawn",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
     "workbench.iconTheme": "ayu",
     "editor.formatOnSave": true
 }
