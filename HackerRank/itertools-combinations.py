@@ -1,10 +1,13 @@
 from itertools import combinations
 def main(word,size):
     combination = list(combinations(word,size))
-    comboList = ["".join(i) for i in combination]
-    comboList.sort()
-    return comboList
-
+    sortList = []
+    for i in combination:
+        l = list(i)
+        l.sort()
+        sortList.append("".join(l))
+    sortList.sort()
+    return sortList
 
 word,size = input().split(' ')
 for i in range(1,int(size)+1):
