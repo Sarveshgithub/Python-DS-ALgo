@@ -1,2 +1,4 @@
 1. Itertools
 2. Collections
+3. These other built-in data structures in Python are also useful.
+    https://www.thelearningpoint.net/computer-science/learning-python-programming-and-data-structures/learning-python-programming-and-data-structures--tutorial-4--built-in-data-structures-strings-lists-tuples-dictionaries-mutability
