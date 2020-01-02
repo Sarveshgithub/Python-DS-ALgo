@@ -1,7 +1,7 @@
 import os
 import sys
-import SudoKu
-SudoKu.main()
+# import SudoKu
+# SudoKu.main()
 from tkinter import *
 
 root = Tk()
