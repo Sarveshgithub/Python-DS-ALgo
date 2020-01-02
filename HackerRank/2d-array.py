@@ -9,13 +9,13 @@ def showArr(arr):
 
 
 def minhourglasses(arr):
-    s = -1
+    s = -100000
     for i in range(0, 4):
         for j in range(0, 4):
             ts = sum(arr[i][j : j + 3] + [arr[i + 1][j + 1]] + arr[i + 2][j : j + 3])
             if ts > s:
                 s = ts
-                glass = arr[i][j : j + 3] + [arr[i + 1][j + 1]] + arr[i + 2][j : j + 3]
+                # glass = arr[i][j : j + 3] + [arr[i + 1][j + 1]] + arr[i + 2][j : j + 3]
     return s
 
 
