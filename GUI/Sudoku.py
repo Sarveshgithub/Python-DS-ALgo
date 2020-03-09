@@ -69,8 +69,13 @@ def print_board(bo):
             else:
                 print(str(bo[i][j]) + " ", end="")
 
+
 def main():
+    print("sarvesh")
     print_board(board)
     print("=" * 23)
     solve(board)
     print_board(board)
+
+
+main()

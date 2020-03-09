@@ -1,9 +1,10 @@
 {
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "C:\\Users\\sarvesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
-    "python.formatting.provider": "black",
-    "workbench.colorTheme": "Ayu Mirage Bordered",
-    "workbench.iconTheme": "ayu",
-    "editor.formatOnSave": true
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.pythonPath": "C:\\Users\\sarvesh.b.kumar\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+  "python.formatting.provider": "black",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.iconTheme": "ayu",
+  "editor.formatOnSave": true,
+  "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": false
 }
